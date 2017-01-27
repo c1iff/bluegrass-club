@@ -2,19 +2,19 @@
     "name": "Steve S",
     "location": "Portland, OR",
     "introduction": "Banjo enthusiast!",
-    "img": "1",
+    "img": "http://lorempixel.com/100/190/people/6",
     "registrationDate": 1485534321995
     }, {
     "name": "Katie J",
     "location": "Portland, OR",
     "introduction": "String music lover",
-    "img": "1",
+    "img": "http://lorempixel.com/100/190/people/7",
     "registrationDate": 1485534321995
     }, {
     "name": "Kenji J",
     "location": "Seattle, WA",
     "introduction": "Hi my name is Kenji, I love to play the mandolin and listen to bluegrass music.",
-    "img": "1",
+    "img": "http://lorempixel.com/100/190/people/8",
     "registrationDate": 1485534321995
   }]
 }

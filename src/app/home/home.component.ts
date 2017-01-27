@@ -20,6 +20,6 @@ export class HomeComponent implements OnInit {
   }
 
   goToDetailPage(clickedMember) {
-    this.router.navigate(['members', clickedAlbum.$key]);
+    this.router.navigate(['members', clickedMember.$key]);
   }
 }
