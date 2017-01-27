@@ -1,7 +1,7 @@
 <h2>Members</h2>
 
 <div >
-  <div *ngFor="let member of members" class="col m3">
-    <h3><em>{{member.name}}</em> {{member.location}}</h3>
+  <div *ngFor="let member of members | async" class="col m3">
+    <h3 (click)="goToDetailPage(member)"><em>{{member.name}}</em> {{member.location}}</h3>
   </div>
 </div>
