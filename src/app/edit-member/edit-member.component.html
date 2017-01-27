@@ -1,0 +1,22 @@
+<h4>Edit Album</h4>
+
+<label>Edit Member Name:</label>
+<input [(ngModel)]="selectedMember.name">
+<br>
+
+<label>Edit Member Location:</label>
+<input [(ngModel)]="selectedMember.location">
+<br>
+
+<label>Edit Member Introduction:</label>
+<input [(ngModel)]="selectedMember.introduction">
+<br>
+
+<label>Edit Member Image:</label>
+<input [(ngModel)]="selectedMember.img">
+<br>
+
+
+<button class="btn yellow" (click)="beginUpdatingMember(selectedMember)">Update</button>
+<hr>
+<button class="btn red" (click)="beginDeletingMember(selectedMember)">Delete</button>
