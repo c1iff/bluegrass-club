@@ -1,0 +1,199 @@
+/* You can add global styles to this file, and also import other style files */
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+.nav-wrapper {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.main-body {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.sidebar {
+  margin-top: 5px;
+}
+
+.output {
+  font-size: 2em;
+}
+
+nav a {
+  color: #2196f3;
+}
+
+.button-collapse {
+  color: #2196f3;
+}
+
+.header_footer {
+  color: #FF2400;
+}
+
+.material-icons {
+  color: #2196f3;
+}
+
+#search {
+  color: #ffffff;
+  font-size: 40px;
+}
+
+#drop-down {
+  color: #ffffff;
+  font-size: 40px;
+}
+
+.page-footer {
+  color: white;
+}
+
+/* label color */
+ .input-field label {
+   color: #000;
+ }
+ /* label focus color */
+ .input-field input[type=text]:focus + label {
+   color: #ffc107;
+ }
+ /* label underline focus color */
+ .input-field input[type=text]:focus {
+   border-bottom: 1px solid #ffc107;
+   box-shadow: 0 1px 0 0 #ffc107;
+ }
+ /* valid color */
+ .input-field input[type=text].valid {
+   border-bottom: 1px solid #000;
+   box-shadow: 0 1px 0 0 #000;
+ }
+ /* invalid color */
+ .input-field input[type=text].invalid {
+   border-bottom: 1px solid #000;
+   box-shadow: 0 1px 0 0 #000;
+ }
+ /* icon prefix focus color */
+ .input-field .prefix.active {
+   color: #000;
+ }
+
+  /* label focus color */
+  .input-field textarea.materialize-textarea:focus + label {
+    color: #ffc107;
+  }
+  /* label underline focus color */
+  .input-field textarea.materialize-textarea:focus {
+    border-bottom: 1px solid #ffc107;
+    box-shadow: 0 1px 0 0 #ffc107;
+  }
+  /* valid color */
+  .input-field textarea.materialize-textarea.valid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+  }
+  /* invalid color */
+  .input-field textarea.materialize-textarea.invalid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+  }
+  /* icon prefix focus color */
+  .input-field .prefix.active {
+    color: #000;
+  }
+
+.progress {
+  display: none;
+}
+
+
+.collapsible-body p {
+  padding: 10px;
+  margin: 0px;
+}
+
+/*******sticky footer*********/
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1;
+}
+/*******extra style*********/
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+.collapsible {
+  margin-top: 0px;
+}
+
+.card-panel {
+  margin-bottom: 0px;
+}
+
+.collapsible-header {
+  font-size: 20px;
+  background-color: #ffc107;
+  color: #fff;
+}
+
+[type="checkbox"]:checked + label:before {
+  border-right: 2px solid #ffc107;
+  border-bottom: 2px solid #ffc107;
+
+}
