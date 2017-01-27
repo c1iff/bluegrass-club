@@ -1,4 +1,3 @@
-<h2>Members</h2>
 <div class="row">
   <div class="input-field col m4">
     <p><b>Filter Members by Location:</b></p>
@@ -10,8 +9,37 @@
   </div>
 </div>
 
+<div class="row">
+  <div class="col m8">
+    <ul class="collection">
+      <li class="center-align"><h4>Current Members</h4><hr></li>
+      <li *ngFor="let member of members | async | filterMembers:locationToFilter" class="collection-item avatar" (click)="goToDetailPage(member)">
+        <img src="{{member.img}}" alt="picture of member" class="circle">
+        <h4>{{member.name}}</h4>
+        <p>{{member.location}} <br>
+          Member Since
+        </p>
+        <div *ngIf="currentRoute === '/admin'">
+          <app-edit-member [selectedMember]="member"></app-edit-member>
+        </div>
+      </li>
+    </ul>
 
-<div >
+  </div>
+
+  <div *ngIf="currentRoute === '/home'">
+    <app-shows></app-shows>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+<!-- <div >
   <div *ngFor="let member of members | async | filterMembers:locationToFilter" class="col m3">
     <h3 (click)="goToDetailPage(member)"><em>{{member.name}}</em> {{member.location}}</h3>
     <div *ngIf="currentRoute === '/admin'">
@@ -22,8 +50,4 @@
       <app-edit-member [selectedMember]="member"></app-edit-member>
     </div>
   </div>
-</div>
-
-<div *ngIf="currentRoute === '/home'">
-  <app-shows></app-shows>
-</div>
+</div> -->

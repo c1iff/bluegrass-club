@@ -1,12 +1,14 @@
-<div>
-  <div *ngFor="let show of shows | async | filterMembers:locationToFilter" class="col m3">
-    <h3 (click)="goToDetailPage(show)"><em>{{show.name}}</em> {{show.location}}</h3>
-    <div *ngIf="currentRoute === '/admin'">
-      <p>
-        edit
-      </p>
-      <hr>
-      <!-- <app-edit-show [selectedMember]="show"></app-edit-show> -->
-    </div>
+
+  <div class="col m4">
+    <ul class="collection">
+      <li class="center-align"><h4>Bluegrass Shows</h4><hr></li>
+      <li *ngFor="let show of shows | async | filterMembers:locationToFilter" class="collection-item avatar" (click)="goToDetailPage(show)">
+        <img src="{{show.img}}" alt="picture of show" class="circle">
+        <h5>{{show.artistName}}</h5>
+        <p>{{show.location}} <br>
+          {{show.date}}
+        </p>
+      </li>
+    </ul>
+
   </div>
-</div>
