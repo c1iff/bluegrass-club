@@ -1,7 +1,18 @@
 <h2>Members</h2>
+<div class="row">
+  <div class="input-field col m4">
+    <p><b>Filter Members by Location:</b></p>
+    <select class="browser-default" id="filter" (change)="onChange($event.target.value)">
+      <option selected="selected" value="all">All Members</option>
+      <option value="Portland, OR">Portland, OR</option>
+      <option value="Seattle, WA">Seattle, WA</option>
+    </select>
+  </div>
+</div>
+
 
 <div >
-  <div *ngFor="let member of members | async" class="col m3">
+  <div *ngFor="let member of members | async | filterMembers:locationToFilter" class="col m3">
     <h3 (click)="goToDetailPage(member)"><em>{{member.name}}</em> {{member.location}}</h3>
     <div *ngIf="currentRoute === '/admin'">
       <p>

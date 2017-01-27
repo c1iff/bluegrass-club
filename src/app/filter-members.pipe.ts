@@ -7,8 +7,22 @@ import {Member} from './member.model';
 })
 export class FilterMembersPipe implements PipeTransform {
 
-  transform(value: any, args?: any): any {
-    return null;
+  transform(input: Member[], location) {
+    var output: Member[] =[];
+    if(input !== null) {
+      if(location === "all") {
+        return input;
+      } else  {
+        for(var i = 0; i<input.length - 1; i++) {
+          if (input[i].location === location) {
+            output.push(input[i])
+          }
+        }
+        return output
+      }
+    } else {
+      return input;
+    }
   }
 
 }
