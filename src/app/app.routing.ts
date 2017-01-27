@@ -4,6 +4,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { MemberDetailComponent } from './member-detail/member-detail.component';
+import { NewMemberComponent } from './new-member/new-member.component';
 
 const appRoutes: Routes = [
   {
@@ -21,6 +22,10 @@ const appRoutes: Routes = [
   {
     path: 'members/:id',
     component: MemberDetailComponent
+  },
+  {
+    path: 'new-member',
+    component: NewMemberComponent
   }
 
 ];

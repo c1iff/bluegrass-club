@@ -1,3 +1,26 @@
-<p>
-  new-member works!
-</p>
+<h3>Join the Club</h3>
+<div>
+  <div>
+    <label>Name:</label>
+    <br>
+    <input #newName>
+  </div>
+
+  <div>
+    <label>Location:</label>
+    <br>
+    <input #newLocation>
+  </div>
+
+  <div>
+    <label>Introduce Yourself:</label>
+    <br>
+    <textarea #newIntroduction></textarea>
+  </div>
+  <div>
+    <label>Add a Picture:</label>
+    <br>
+    <input #newImg>
+  </div>
+   <button class="btn blue" (click)="submitForm(newName.value, newLocation.value, newIntroduction.value, newImg.value); newName.value=''; newLocation.value=''; newIntroduction.value=''; newImg.value=''">Join</button>
+</div>
