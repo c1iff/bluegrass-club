@@ -1,7 +1,12 @@
 <p>
   admin works!
 </p>
-
+<div *ngIf="showNewShowForm === false">
+  <button class="btn green" (click)="toggleNewShowForm()">Add a New Show</button>
+</div>
+<div *ngIf="showNewShowForm">
+  <app-new-show></app-new-show>
+</div>
 <div>
   <app-home></app-home>
 </div>

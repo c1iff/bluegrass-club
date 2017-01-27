@@ -9,10 +9,15 @@ import { MemberService } from '../member.service';
   providers: [MemberService]
 })
 export class AdminComponent implements OnInit {
+  showNewShowForm: boolean = false;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  toggleNewShowForm() {
+    this.showNewShowForm = true;
   }
 
 }

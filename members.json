@@ -16,5 +16,46 @@
     "introduction": "Hi my name is Kenji, I love to play the mandolin and listen to bluegrass music.",
     "img": "http://lorempixel.com/100/190/people/8",
     "registrationDate": 1485534321995
-  }]
+  }],
+  "shows": [{
+      "artistName": "Elephant Revival",
+      "date": "Thursday, February 9, 2017",
+      "doorTime": "8:00PM",
+      "showTime": "9:00PM",
+      "location": "Portland, OR",
+      "venue": "Wonder Ballroom",
+      "description": "Music unites us in ways that no other medium can. Even when we don’t understand one another’s languages – we can be moved by a rhythm, soothed by a song. Brought together by a unified sense of purpose – the spirit of five souls working as one, in harmony, creating sounds they could never produce alone.",
+      "img": "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjPx6n5jePRAhUQ92MKHZSUAgcQjRwIBw&url=http%3A%2F%2Fwww.thebluegrasssituation.com%2Fread%2Fwatch-elephant-revival-rogue-river&psig=AFQjCNFYbIhneO_SEhvMOl-Hdix5dzfVwA&ust=1485633390119664",
+      "postingDate": 1485534321995
+      }, {
+      "artistName": "Greensky Bluegrass",
+      "date": "Thursday, February 9, 2017",
+      "doorTime": "8:00PM",
+      "showTime": "9:00PM",
+      "location": "Portland, OR",
+      "venue": "Crystal Ballroom",
+      "description": "Greensky Bluegrass is Anders Beck (dobro), Michael Arlen Bont (banjo), Dave Bruzza (guitar), Mike Devol (upright bass) and Paul Hoffman (mandolin). For more than a decade and a half, the members of Greensky Bluegrass have created their own version of bluegrass music, mixing the acoustic stomp of a stringband with the rule-breaking spirit of rock & roll. They redefine that sound once again with their sixth album, Shouted, Written Down & Quoted.",
+      "img": "http://greenskybluegrass.com/files/8614/8487/3348/GREENSKY_BLUEGRASS_PRESS_PHOTO_2017_150dpi.jpg",
+      "postingDate": 1485534321995
+      }, {
+      "artistName": "Crow and The Canyon",
+      "date": "Thursday, February 9, 2017",
+      "doorTime": "8:00PM",
+      "showTime": "9:00PM",
+      "location": "Seattle, WA",
+      "venue": "Wonder Ballroom",
+      "description": "Although the band has only been playing together since 2014, Crow and the Canyon sound like a band of age-old collaborators and friends. Their heartfelt yet cerebral lyrics, soaring vocals, and impressive instrumentals are endlessly listenable, while also remaining inventive and interesting.",
+      "img": "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjPx6n5jePRAhUQ92MKHZSUAgcQjRwIBw&url=http%3A%2F%2Fwww.thebluegrasssituation.com%2Fread%2Fwatch-elephant-revival-rogue-river&psig=AFQjCNFYbIhneO_SEhvMOl-Hdix5dzfVwA&ust=1485633390119664",
+      "postingDate": 1485534321995
+    }, {
+      "artistName": "Horseshoes and Hand Grenades",
+      "date": "Thursday, February 9, 2017",
+      "doorTime": "8:00PM",
+      "showTime": "9:00PM",
+      "location": "San Francisco, CA",
+      "venue": "Wonder Ballroom",
+      "description": "Although the band has only been playing together since 2014, Crow and the Canyon sound like a band of age-old collaborators and friends. Their heartfelt yet cerebral lyrics, soaring vocals, and impressive instrumentals are endlessly listenable, while also remaining inventive and interesting.",
+      "img": "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjPx6n5jePRAhUQ92MKHZSUAgcQjRwIBw&url=http%3A%2F%2Fwww.thebluegrasssituation.com%2Fread%2Fwatch-elephant-revival-rogue-river&psig=AFQjCNFYbIhneO_SEhvMOl-Hdix5dzfVwA&ust=1485633390119664",
+      "postingDate": 1485534321995
+    }]
 }

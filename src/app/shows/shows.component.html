@@ -1,0 +1,12 @@
+<div>
+  <div *ngFor="let show of shows | async | filterMembers:locationToFilter" class="col m3">
+    <h3 (click)="goToDetailPage(show)"><em>{{show.name}}</em> {{show.location}}</h3>
+    <div *ngIf="currentRoute === '/admin'">
+      <p>
+        edit
+      </p>
+      <hr>
+      <!-- <app-edit-show [selectedMember]="show"></app-edit-show> -->
+    </div>
+  </div>
+</div>
