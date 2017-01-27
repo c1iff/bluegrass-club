@@ -1,0 +1,14 @@
+<div class="col s12 m7">
+  <h2 class="header">Horizontal Card</h2>
+  <div class="card horizontal">
+    <div class="card-image">
+      <img src="{{(showToDisplay | async)?.img}}">
+    </div>
+    <div class="card-stacked">
+      <div class="card-content">
+        <h3>{{(showToDisplay | async)?.artistName}}</h3>
+        <p>{{(showToDisplay | async)?.location}}</p>
+      </div>
+    </div>
+  </div>
+</div>

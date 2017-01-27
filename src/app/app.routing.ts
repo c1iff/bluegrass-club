@@ -6,6 +6,7 @@ import { AboutComponent } from './about/about.component';
 import { MemberDetailComponent } from './member-detail/member-detail.component';
 import { NewMemberComponent } from './new-member/new-member.component';
 import { AdminComponent } from './admin/admin.component';
+import { ShowDetailComponent } from './show-detail/show-detail.component';
 
 const appRoutes: Routes = [
   {
@@ -31,6 +32,10 @@ const appRoutes: Routes = [
   {
     path: 'admin',
     component: AdminComponent
+  },
+  {
+    path: 'shows/:id',
+    component: ShowDetailComponent
   }
 
 ];

@@ -1,14 +1,39 @@
-<nav>
+<div class="navbar-fixed">
+    <nav id="nav_f" class="default_color" role="navigation">
+        <div class="container">
+            <div class="nav-wrapper">
+            <a routerLink="/" id="logo-container" class="brand-logo">NW Bluegrass Club</a>
+                <ul class="right hide-on-med-and-down">
+                  <li><a routerLink="/new-member">Join</a></li>
+                  <li><a routerLink="/admin">Admin</a></li>
+                  <li><a routerLink="/home">Members</a></li>
+                  <li><a routerLink="/about">About</a></li>
+                </ul>
+                <ul id="nav-mobile" class="side-nav">
+                  <li><a routerLink="/new-member">Join</a></li>
+                  <li><a routerLink="/admin">Admin</a></li>
+                  <li><a routerLink="/home">Members</a></li>
+                  <li><a routerLink="/about">About</a></li>
+                </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+
+<!-- <nav>
   <div class="nav-wrapper white z-depth-0">
     <a href="" class="brand-logo">Logo</a>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
-      <li><a href="/new-member">Join</a></li>
-      <li><a href="/admin">Admin</a></li>
+      <li><a routerLink="/new-member">Join</a></li>
+      <li><a routerLink="/admin">Admin</a></li>
       <li><a routerLink="/home">Members</a></li>
       <li><a routerLink="/about">About</a></li>
     </ul>
   </div>
-</nav>
+</nav> -->
 
 <div class="container">
   <router-outlet></router-outlet>

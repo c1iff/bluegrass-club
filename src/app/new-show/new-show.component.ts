@@ -19,7 +19,6 @@ export class NewShowComponent implements OnInit {
   submitForm (artistName: string, date: string, doorTime: string, showTime: string, city: string, state: string, venue: string, description: string, overTwentyOne: boolean, img: string){
     var location = city + ' ,' + state
     var newShow: Show = new Show(artistName, date, doorTime, showTime, location, venue, description, overTwentyOne, img)
-    console.log(newShow)
     this.showService.addShow(newShow)
     this.showAddedEvent.emit()
   }

@@ -18,6 +18,7 @@ import { EditMemberComponent } from './edit-member/edit-member.component';
 import { FilterMembersPipe } from './filter-members.pipe';
 import { ShowsComponent } from './shows/shows.component';
 import { NewShowComponent } from './new-show/new-show.component';
+import { ShowDetailComponent } from './show-detail/show-detail.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -38,7 +39,8 @@ export const firebaseConfig = {
     EditMemberComponent,
     FilterMembersPipe,
     ShowsComponent,
-    NewShowComponent
+    NewShowComponent,
+    ShowDetailComponent
   ],
   imports: [
     BrowserModule,
