@@ -1,19 +1,36 @@
 <h3>Join the Club</h3>
 <div>
   <div>
-    <label>Name:</label>
+    <label>Artist Name:</label>
     <br>
-    <input #newName>
+    <input #newArtistName>
+  </div>
+  <div>
+    <label>Date:</label>
+    <br>
+    <input #newDate>
+  </div>
+  <div class="row">
+    <div class="col m6">
+      <label>Door Time:</label>
+      <br>
+      <input #newDoorTime>
+    </div>
+    <div class="col m6">
+      <label>Show Time:</label>
+      <br>
+      <input #newShowTime>
+    </div>
   </div>
   <div class="row">
     <div class="col m6">
       <label>City:</label>
       <br>
-      <input #newLocation>
+      <input #newCity>
     </div>
     <div class="col m6">
       <label>State:</label>
-      <select>
+      <select class="browser-default" #newState>
         <option value="AL">Alabama</option>
         <option value="AK">Alaska</option>
         <option value="AZ">Arizona</option>
@@ -69,16 +86,29 @@
     </div>
   </div>
 
+  <div>
+    <label>Venue Name:</label>
+    <br>
+    <input #newVenue>
+  </div>
 
   <div>
     <br>
-    <label for="intro" >Introduce Yourself:</label>
-    <textarea id="intro" class="materialize-textarea" #newIntroduction></textarea>
+    <label for="description" >Artist Description:</label>
+    <textarea id="description" class="materialize-textarea" #newDescription></textarea>
+  </div>
+  <div class="row">
+    <div class="col m2">
+      <select class="browser-default" #overTwentyOne>
+        <option value="true">Yes</option>
+        <option value="false">No</option>
+      </select>
+    </div>
   </div>
   <div>
-    <label>Add a Picture:</label>
+    <label>Add a Picture URL:</label>
     <br>
-    <input #newImg>
+    <input #newImg placeholder="http://...">
   </div>
-   <button class="btn green" (click)="submitForm(newName.value, newLocation.value, newIntroduction.value, newImg.value); newName.value=''; newLocation.value=''; newIntroduction.value=''; newImg.value=''">Add Show</button>
+   <button class="btn green" (click)="submitForm(newArtistName.value, newDate.value, newDoorTime.value, newShowTime.value, newCity.value, newState.value, newVenue.value, newDescription.value, overTwentyOne.value, newImg.value); newArtistName.value=''; newDate.value=''; newDoorTime.value=''; newShowTime.value=''; newCity.value=''; newState.value=''; newVenue.value=''; newDescription.value=''; overTwentyOne.value=''; newImg.value=''">Add Show</button>
 </div>

@@ -20,4 +20,8 @@ export class AdminComponent implements OnInit {
     this.showNewShowForm = true;
   }
 
+  hideAddShowForm(){
+    this.showNewShowForm = false;
+  }
+
 }

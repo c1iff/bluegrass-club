@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Show } from '../show.model';
 import { ShowService } from '../show.service';
 
@@ -9,15 +9,19 @@ import { ShowService } from '../show.service';
   providers: [ShowService]
 })
 export class NewShowComponent implements OnInit {
+  @Output() showAddedEvent = new EventEmitter();
 
   constructor(private showService: ShowService) { }
 
   ngOnInit() {
   }
 
-  submitForm (artistName: string, date: string, time: string, location: string, venue: string, description: string, overTwentyOne: boolean, img: string){
-    var newShow: Show = new Show(artistName, date, time, location, venue, description, overTwentyOne, img)
+  submitForm (artistName: string, date: string, doorTime: string, showTime: string, city: string, state: string, venue: string, description: string, overTwentyOne: boolean, img: string){
+    var location = city + ' ,' + state
+    var newShow: Show = new Show(artistName, date, doorTime, showTime, location, venue, description, overTwentyOne, img)
+    console.log(newShow)
     this.showService.addShow(newShow)
+    this.showAddedEvent.emit()
   }
 
 

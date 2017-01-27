@@ -5,8 +5,8 @@
   <button class="btn green" (click)="toggleNewShowForm()">Add a New Show</button>
 </div>
 <div *ngIf="showNewShowForm">
-  <app-new-show></app-new-show>
+  <app-new-show (showAddedEvent)="hideAddShowForm($event)"></app-new-show>
 </div>
 <div>
-  <app-home></app-home>
+  <app-home ></app-home>
 </div>
