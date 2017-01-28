@@ -1,6 +1,7 @@
 <br>
 <div *ngIf="showNewShowForm === false">
-  <button class="btn green" (click)="toggleNewShowForm()">Add a New Show</button>
+   <a class="btn-floating btn-large waves-effect waves-light red left" (click)="toggleNewShowForm()"><i class="material-icons">add</i></a>
+   <h3 id='add-label'>Add a New Show</h3>
 </div>
 <div *ngIf="showNewShowForm">
   <app-new-show (showAddedEvent)="hideAddShowForm($event)"></app-new-show>

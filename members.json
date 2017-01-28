@@ -2,20 +2,32 @@
     "name": "Steve S",
     "location": "Portland, OR",
     "introduction": "Banjo enthusiast!",
-    "img": "http://lorempixel.com/100/190/people/6",
-    "registrationDate": 1485534321995
+    "img": "http://lorempixel.com/100/190/people",
+    "registrationDate": "Fri Jan 27 2017"
     }, {
     "name": "Katie J",
     "location": "Portland, OR",
     "introduction": "String music lover",
-    "img": "http://lorempixel.com/100/190/people/7",
-    "registrationDate": 1485534321995
+    "img": "http://lorempixel.com/100/190/people",
+    "registrationDate": "Fri Jan 27 2017"
+    }, {
+    "name": "Jose M",
+    "location": "Eugene, OR",
+    "introduction": "String music lover",
+    "img": "http://lorempixel.com/100/190/people",
+    "registrationDate": "Fri Jan 27 2017"
+    }, {
+    "name": "Loren F",
+    "location": "Vancouver, WA",
+    "introduction": "Fiddle lover",
+    "img": "http://lorempixel.com/100/190/people",
+    "registrationDate": "Fri Jan 27 2017"
     }, {
     "name": "Kenji J",
     "location": "Seattle, WA",
     "introduction": "Hi my name is Kenji, I love to play the mandolin and listen to bluegrass music.",
-    "img": "http://lorempixel.com/100/190/people/8",
-    "registrationDate": 1485534321995
+    "img": "http://lorempixel.com/100/190/people",
+    "registrationDate": "Fri Jan 27 2017"
   }],
   "shows": [{
       "artistName": "Elephant Revival",
@@ -25,7 +37,7 @@
       "location": "Portland, OR",
       "venue": "Wonder Ballroom",
       "description": "Music unites us in ways that no other medium can. Even when we don’t understand one another’s languages – we can be moved by a rhythm, soothed by a song. Brought together by a unified sense of purpose – the spirit of five souls working as one, in harmony, creating sounds they could never produce alone.",
-      "img": "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjPx6n5jePRAhUQ92MKHZSUAgcQjRwIBw&url=http%3A%2F%2Fwww.thebluegrasssituation.com%2Fread%2Fwatch-elephant-revival-rogue-river&psig=AFQjCNFYbIhneO_SEhvMOl-Hdix5dzfVwA&ust=1485633390119664",
+      "img": "http://www.lorempixel.com/640/480",
       "postingDate": 1485534321995
       }, {
       "artistName": "Greensky Bluegrass",
@@ -45,7 +57,7 @@
       "location": "Seattle, WA",
       "venue": "Wonder Ballroom",
       "description": "Although the band has only been playing together since 2014, Crow and the Canyon sound like a band of age-old collaborators and friends. Their heartfelt yet cerebral lyrics, soaring vocals, and impressive instrumentals are endlessly listenable, while also remaining inventive and interesting.",
-      "img": "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjPx6n5jePRAhUQ92MKHZSUAgcQjRwIBw&url=http%3A%2F%2Fwww.thebluegrasssituation.com%2Fread%2Fwatch-elephant-revival-rogue-river&psig=AFQjCNFYbIhneO_SEhvMOl-Hdix5dzfVwA&ust=1485633390119664",
+      "img": "http://www.lorempixel.com/640/480",
       "postingDate": 1485534321995
     }, {
       "artistName": "Horseshoes and Hand Grenades",
@@ -55,7 +67,7 @@
       "location": "San Francisco, CA",
       "venue": "Wonder Ballroom",
       "description": "Although the band has only been playing together since 2014, Crow and the Canyon sound like a band of age-old collaborators and friends. Their heartfelt yet cerebral lyrics, soaring vocals, and impressive instrumentals are endlessly listenable, while also remaining inventive and interesting.",
-      "img": "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjPx6n5jePRAhUQ92MKHZSUAgcQjRwIBw&url=http%3A%2F%2Fwww.thebluegrasssituation.com%2Fread%2Fwatch-elephant-revival-rogue-river&psig=AFQjCNFYbIhneO_SEhvMOl-Hdix5dzfVwA&ust=1485633390119664",
+      "img": "http://www.lorempixel.com/640/480",
       "postingDate": 1485534321995
     }]
 }

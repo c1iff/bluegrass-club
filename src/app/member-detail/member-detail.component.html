@@ -8,6 +8,8 @@
         <div class="card-content">
           <h3>{{(memberToDisplay | async)?.name}}</h3>
           <p>{{(memberToDisplay | async)?.location}}</p>
+          <p>{{(memberToDisplay | async)?.introduction}}</p>
+          <p>Member Since {{(memberToDisplay | async)?.registrationDate}}</p>
         </div>
       </div>
     </div>

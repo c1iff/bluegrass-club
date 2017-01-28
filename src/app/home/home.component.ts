@@ -12,6 +12,7 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 })
 export class HomeComponent implements OnInit {
   members: FirebaseListObservable<any[]>;
+  locations: string[];
   currentRoute: string = this.router.url;
   locationToFilter: string = "all";
 
@@ -19,6 +20,17 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.members = this.memberService.getMembers();
+
+    this.members.subscribe(result => {
+      var getLocationArray = [];
+      result.forEach(function(each){
+        getLocationArray.push(each.location);
+      })
+      this.locations = getLocationArray.filter(function(elem, pos, arr) {
+        return arr.indexOf(elem) == pos;
+      })
+    });
+
   }
 
   goToDetailPage(clickedMember) {

@@ -1,13 +1,22 @@
 <div class="col s12 m7">
-  <h2 class="header">Horizontal Card</h2>
-  <div class="card horizontal">
+  <div class="card">
     <div class="card-image">
       <img src="{{(showToDisplay | async)?.img}}">
     </div>
     <div class="card-stacked">
-      <div class="card-content">
+      <div class="card-content center-align">
         <h3>{{(showToDisplay | async)?.artistName}}</h3>
+        <h5>{{(showToDisplay | async)?.date}}</h5>
+        <p>Doors: {{(showToDisplay | async)?.doorTime}} / Show: {{(showToDisplay | async)?.doorTime}}</p>
+        <p>{{(showToDisplay | async)?.venue}}</p>
         <p>{{(showToDisplay | async)?.location}}</p>
+        <button class="btn purple" href="https://www.ticketfly.com/">Get Tickets</button>
+        <br>
+        <hr>
+        <h5>{{(showToDisplay | async)?.artistName}}</h5>
+        <p>
+          {{(showToDisplay | async)?.description}}
+        </p>
       </div>
     </div>
   </div>

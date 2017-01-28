@@ -3,8 +3,7 @@
     <p><b>Filter Members by Location:</b></p>
     <select class="browser-default" id="filter" (change)="onChange($event.target.value)">
       <option selected="selected" value="all">All Members</option>
-      <option value="Portland, OR">Portland, OR</option>
-      <option value="Seattle, WA">Seattle, WA</option>
+      <option *ngFor="let location of locations" value="{{location}}">{{location}}</option>
     </select>
   </div>
 </div>
