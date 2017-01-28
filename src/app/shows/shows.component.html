@@ -2,12 +2,13 @@
   <div class="col m4">
     <ul class="collection">
       <li class="center-align"><h4>Bluegrass Shows</h4><hr></li>
-      <li *ngFor="let show of shows | async | filterMembers:locationToFilter" class="collection-item avatar" (click)="goToDetailPage(show)">
+      <li *ngFor="let show of shows | async | filterMembers:locationToFilter" class="collection-item avatar" >
         <img src="{{show.img}}" alt="picture of show" class="circle">
         <h5>{{show.artistName}}</h5>
         <p>{{show.location}} <br>
           {{show.date}}
         </p>
+          <a class="waves-effect waves-teal btn-flat align-center" (click)="goToDetailPage(show)">View Show</a>
       </li>
     </ul>
 

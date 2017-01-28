@@ -1,4 +1,10 @@
-# BluegrassClub
+# Epicodus javascript Week 4 Solo Project
+
+#### By Chris Clifford, 1/6/2016
+
+## Description
+
+This app is for a bluegrass club
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26.
 

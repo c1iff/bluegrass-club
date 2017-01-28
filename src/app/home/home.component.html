@@ -12,12 +12,14 @@
   <div class="col m8">
     <ul class="collection">
       <li class="center-align"><h4>Current Members</h4><hr></li>
-      <li *ngFor="let member of members | async | filterMembers:locationToFilter" class="collection-item avatar" (click)="goToDetailPage(member)">
+      <li *ngFor="let member of members | async | filterMembers:locationToFilter" class="collection-item avatar">
         <img src="{{member.img}}" alt="picture of member" class="circle">
         <h4>{{member.name}}</h4>
         <p>{{member.location}} <br>
-          Member Since
+          Member Since {{member.registrationDate}}
         </p>
+        <br>
+        <a class="waves-effect waves-teal btn-flat" (click)="goToDetailPage(member)" style="margin-left: -30px;">View Member Details</a>
         <div *ngIf="currentRoute === '/admin'">
           <app-edit-member [selectedMember]="member"></app-edit-member>
         </div>
